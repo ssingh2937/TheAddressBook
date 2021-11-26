@@ -14,6 +14,7 @@ The screen show all details of the user.
 
 Missing features:
 - Cloud Syncing.
+- Contact Sharing.
 
 ![WhatsApp Image 2021-11-26 at 3 49 45 PM](https://user-images.githubusercontent.com/78059569/143646229-66ca94f0-39dd-428e-84a9-2365cb5e67d4.jpeg)
 
