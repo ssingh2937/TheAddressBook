@@ -10,7 +10,7 @@ This is the first screen of the app which shows list of all contacts (Name and p
 This is the screen which will be used to add contacts. Tapping on the imageView will take to your phone gallery to select a image from your phone. The firstName and phone field is mandatory to fill, rest all are optional. Clicking on the button will save the data to your local phone database(SQLite). 
 
 **Contact Details Screen**
-The screen show all details of the user.
+The screen show all details of the user. The phone number card can be tapped to call a person and email card takes us to the email app of our phone(Gmail usually).
 
 Missing features:
 - Cloud Syncing.
