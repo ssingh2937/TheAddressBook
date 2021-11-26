@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_blue"
+    tools:context=".AddContactActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:layout_toRightOf="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/app_blue"
+            android:layout_marginLeft="20dp"
+            android:text="Add contact"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/add_profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="5dp"
+        android:layout_gravity="center"
+        android:src="@drawable/profile_placeholder"/>
+
+    <EditText
+        android:id="@+id/first_name_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_first_name"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:background="@drawable/round_grey_border_bg"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/last_name_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_last_name"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:background="@drawable/round_grey_border_bg"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/phone_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_phone"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:maxLength="10"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:background="@drawable/round_grey_border_bg"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/email_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_email"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:background="@drawable/round_grey_border_bg"
+        android:inputType="textEmailAddress" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="16dp"
+        app:cornerRadius="16dp"
+        android:text="@string/save_contact"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

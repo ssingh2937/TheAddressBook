@@ -4,15 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_blue"
     tools:context=".MainActivity">
 
+    <RelativeLayout
+        android:id="@+id/app_bar"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_toEndOf="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/app_blue"
+            android:text="@string/contact_list"/>
+
+    </RelativeLayout>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_contact_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_baseline_person_add_24"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
+        app:backgroundTint="@color/app_blue"
         android:contentDescription="@string/add_contact" />
 
+    <androidx.appcompat.widget.SearchView
+        android:layout_below="@+id/app_bar"
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contact_list"
+        android:layout_below="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </RelativeLayout>

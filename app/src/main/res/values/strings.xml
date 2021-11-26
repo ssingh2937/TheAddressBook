@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">TheAddressBook</string>
     <string name="add_contact">Add contact</string>
+    <string name="contact_list">Contact List</string>
+    <string name="contact_name">Contact Name</string>
+    <string name="enter_first_name">Enter first name</string>
+    <string name="enter_last_name">Enter last name</string>
+    <string name="enter_phone">Enter phone</string>
+    <string name="enter_email">Enter email</string>
+    <string name="save_contact">Save contact</string>
+    <string name="contact_details">Contact Details</string>
 </resources>
